@@ -1,0 +1,46 @@
+body {
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+.flexContainer {
+    display: flex;
+    margin: 5px 5px 5px 5px;
+}
+
+.flexColumn {
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+table {
+    width: 100%;
+    border-style: solid;
+    border-width: unset !important;
+}
+
+th, tr, td {
+    border-style: solid;
+    border-width: unset !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+.tableContainer {
+    height: 500px;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+.selectedCell {
+    background-color: green !important;
+}

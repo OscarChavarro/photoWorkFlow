@@ -1,0 +1,60 @@
+<!-- 
+Copyright (c) 2022, Oscar Chavarro (jedilink@gmail.com)
+This code is closed source / propertary. Do not redistribute.
+DISPLAIMER: Use AS IS, author is not responsible of any damages
+caused by the misuse of this software.
+-->
+
+<template name="photoSelectorTemplate">
+    <div class="wrap">
+        <div id="tinderslide">
+            <ul>
+                <li class="pane1">
+                    <div class="img"></div>
+                    <div>Miami Beach</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane2">
+                    <div class="img"></div>
+                    <div>San Francisco</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane3">
+                    <div class="img"></div>
+                    <div>Chicago</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane4">
+                    <div class="img"></div>
+                    <div>New York</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+                <li class="pane5">
+                    <div class="img"></div>
+                    <div>Beach</div>
+                    <div class="like"></div>
+                    <div class="dislike"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="actions">
+        <a href="#" class="dislike">
+            {{>iconDislike}}
+        </a>
+        <a href="#" class="like">
+            {{>iconLike}}
+        </a>
+    </div>
+
+    <ul id="dynamicFrames">
+        <li>Back buffer</li>
+        <li>Front buffer</li>
+    </ul>
+    <button id="nextButton" class="btn btn-primary">Next</button>
+</template>

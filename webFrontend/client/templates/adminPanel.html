@@ -1,0 +1,95 @@
+<!-- 
+Copyright (c) 2022, Oscar Chavarro (jedilink@gmail.com)
+This code is closed source / propertary. Do not redistribute.
+DISPLAIMER: Use AS IS, author is not responsible of any damages
+caused by the misuse of this software.
+-->
+
+<template name="adminPanelTemplate">
+    <h1>Admin panel</h1>
+
+    <div class="flexContainer">
+        <div class="flexColumn">
+            <h2>Clients</h2>
+            <select id="clientList" size="20">
+                <option value="noclient">[Sessions with no client]</option>
+                {{#each client in clients}}
+                    <option value="{{client._id}}">{{client.name}}</option>
+                {{/each}}
+            </select>
+            <br>
+            <button id="addClientButton" class="btn btn-primary">{{>icon "plus"}}</button>
+            {{#if clientSelected}}
+                <button id="deleteClientButton" class="btn btn-danger">{{>icon "trash"}}</button>
+            {{else}}
+                No client is selected.
+            {{/if}}
+        </div>
+
+        <div class="flexColumn">
+            {{#if clientSelected}}
+                <h2>Client information</h2>
+
+                <label for="clientName">Name:</label>
+                <input id="clientName" type="text" Placeholder="[Client Name]" value="{{selectedClient.name}}"/>
+                <br>
+                <label>Directory tag:</label>
+                <input id="clientTag" type="text" Placeholder="[Directory Tag]" value="{{selectedClient.tag}}"/>
+
+                <h2>Sessions</h2>
+                <p>Sessions for user {{selectedClient.name}}:</p>
+                <select id="sessionList" size="10">
+                    {{#each path in selectedSessionLocation.sessionPaths}}
+                        <option value="path_{{@index}}">{{path}}</option>
+                    {{/each}}
+                </select>
+            {{else}}
+                Select a client to see associated sessions.
+            {{/if}}
+        </div>
+
+        {{#if selectedVariants}}
+            <div class="flexColumn">
+                <h2>Variants</h2>
+                <ul>
+                    {{#each variant in selectedVariants}}
+                        <li>{{@index}}:{{variant}}</li>
+                    {{/each}}
+                </ul>
+                <div class="tableContainer">
+                    <table>
+                        <tr>
+                            <th>Image</th>
+                            {{#each variant in selectedVariants}}
+                                <th class="centered">{{@index}}</th>
+                            {{/each}}
+                        </tr>
+                        {{#each s in selectedImages}}
+                            <tr>
+                                <td>
+                                    {{s.name}}
+                                </td>
+                                {{#let imageIndex=@index}}
+                                    {{#each variant in selectedVariants}}
+                                        {{#if isPresent s variant}}
+                                            <td id='cell_{{imageIndex}}_{{@index}}' data-url="{{variant}}/{{s.name}}" class="imageCell centered" style="background-color: #80ff80;"> </td>
+                                        {{else}}
+                                            <td class="centered" style="background-color: white;"> </td>
+                                        {{/if}}
+                                    {{/each}}
+                                {{/let}}
+                            </tr>
+                        {{/each}}
+                    </table>
+                </div>
+            </div>
+        {{/if}}
+
+        {{#if selectedImageUrl}}
+            <div class="flexColumn">
+                <h2>Image</h2>
+                <img src="https://cubestudio.co/{{selectedImageUrl}}" width="540px">
+            </div>
+        {{/if}}
+    </div>
+</template>
