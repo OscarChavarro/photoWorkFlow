@@ -1,173 +1,0 @@
-[[[[[ ~/usr/photoWorkFlow/webFrontend ]]]]]
-
-=> Started proxy.
-
-Changes to your project's package version selections:
-
-allow-deny                    added, version 1.1.1
-autoupdate                    added, version 1.8.0
-babel-compiler                added, version 7.8.1
-babel-runtime                 added, version 1.5.0
-base64                        added, version 1.0.12
-binary-heap                   added, version 1.0.11
-blaze                         added, version 2.5.0
-blaze-html-templates          added, version 1.2.1
-blaze-tools                   added, version 1.1.2
-boilerplate-generator         added, version 1.7.1
-caching-compiler              added, version 1.2.2
-caching-html-compiler         added, version 1.2.0
-callback-hook                 added, version 1.4.0
-check                         added, version 1.3.1
-ddp                           added, version 1.4.0
-ddp-client                    added, version 2.5.0
-ddp-common                    added, version 1.4.0
-ddp-server                    added, version 2.5.0
-deps                          added, version 1.0.12
-diff-sequence                 added, version 1.1.1
-dynamic-import                added, version 0.7.2
-ecmascript                    added, version 0.16.1
-ecmascript-runtime            added, version 0.8.0
-ecmascript-runtime-client     added, version 0.12.1
-ecmascript-runtime-server     added, version 0.11.0
-ejson                         added, version 1.1.1
-es5-shim                      added, version 4.8.0
-fetch                         added, version 0.1.1
-fortawesome:fontawesome       added, version 4.7.0
-fourseven:scss                added, version 4.15.0
-geojson-utils                 added, version 1.0.10
-hot-code-push                 added, version 1.0.4
-html-tools                    added, version 1.1.2
-htmljs                        added, version 1.1.1
-id-map                        added, version 1.1.1
-inter-process-messaging       added, version 0.1.1
-iron:controller               added, version 1.1.0
-iron:core                     added, version 1.0.11
-iron:dynamic-template         added, version 1.1.0
-iron:layout                   added, version 1.0.12
-iron:location                 added, version 1.1.0
-iron:middleware-stack         added, version 1.1.0
-iron:router                   added, version 1.2.0
-iron:url                      added, version 1.1.0
-jquery                        added, version 3.0.0
-launch-screen                 added, version 1.3.0
-logging                       added, version 1.3.1
-meteor                        added, version 1.10.0
-meteor-base                   added, version 1.5.1
-meteorhacks:aggregate         added, version 1.3.0
-meteorhacks:collection-utils  added, version 1.2.0
-minifier-css                  added, version 1.6.0
-minifier-js                   added, version 2.7.3
-minimongo                     added, version 1.8.0
-mobile-experience             added, version 1.1.0
-mobile-status-bar             added, version 1.1.0
-modern-browsers               added, version 0.1.7
-modules                       added, version 0.18.0
-modules-runtime               added, version 0.12.0
-mongo                         added, version 1.14.6
-mongo-decimal                 added, version 0.1.2
-mongo-dev-server              added, version 1.1.0
-mongo-id                      added, version 1.0.8
-mongo-livedata                added, version 1.0.12
-npm-mongo                     added, version 4.3.1
-observe-sequence              added, version 1.0.19
-ordered-dict                  added, version 1.1.0
-promise                       added, version 0.12.0
-random                        added, version 1.2.0
-react-fast-refresh            added, version 0.2.3
-reactive-dict                 added, version 1.3.0
-reactive-var                  added, version 1.0.11
-reload                        added, version 1.3.1
-retry                         added, version 1.1.0
-routepolicy                   added, version 1.1.1
-session                       added, version 1.2.0
-shell-server                  added, version 0.5.0
-socket-stream-client          added, version 0.4.0
-spacebars                     added, version 1.2.0
-spacebars-compiler            added, version 1.2.1
-standard-minifier-css         added, version 1.7.4
-standard-minifier-js          added, version 2.8.0
-templating                    added, version 1.4.1
-templating-compiler           added, version 1.4.1
-templating-runtime            added, version 1.5.0
-templating-tools              added, version 1.2.0
-tracker                       added, version 1.2.0
-typescript                    added, version 4.4.1
-ui                            added, version 1.0.13
-underscore                    added, version 1.0.10
-webapp                        added, version 1.13.1
-webapp-hashing                added, version 1.1.0
-
-=> Started your app.
-
-=> App running at: http://localhost:3666/
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)=> Client modified -- refreshing (x4)
-=> Errors prevented startup:
-   
-   While processing files with templating-compiler (for target web.browser):
-   client/templates/main.html:12: Expected "a" end tag
-   ...nel">Admin panel</li>     </ul>
-   ^
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-=> Errors prevented startup:
-   
-   While processing files with templating-compiler (for target web.browser):
-   client/templates/main.html:12: Expected "a" end tag
-   ...nel">Admin panel</li>     </ul>
-   ^
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-=> Errors prevented startup:
-   
-   While processing files with templating-compiler (for target web.browser):
-   client/templates/main.html:12: Expected "a" end tag
-   ...nel">Admin panel</li>     </ul>
-   ^
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-=> Errors prevented startup:
-   
-   While processing files with templating-compiler (for target web.browser):
-   client/templates/main.html:12: Expected "a" end tag
-   ...nel">Admin panel</li>     </ul>
-   ^
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-=> Errors prevented startup:
-   
-   While processing files with templating-compiler (for target web.browser):
-   client/templates/main.html:12: Expected "a" end tag
-   ...nel">Admin panel</li>     </ul>
-   ^
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-=> Errors prevented startup:
-   
-   While processing files with templating-compiler (for target web.browser):
-   client/templates/main.html:12: Expected "a" end tag
-   ...nel">Admin panel</li>     </ul>
-   ^
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-=> Meteor server restarted
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)=> Client modified -- refreshing (x4)
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)=> Client modified -- refreshing (x4)=> Client modified -- refreshing (x5)=> Client modified -- refreshing (x6)=> Client modified -- refreshing (x7)=> Client modified -- refreshing (x8)=> Client modified -- refreshing (x9)=> Client modified -- refreshing (x10)
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Server modified -- restarting...                                   => Meteor server restarted
-I20220327-13:27:48.156(2)? Inserting { name: 'Andrea' }
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)
-=> Server modified -- restarting...                                   => Meteor server restarted
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)
-I20220327-13:32:25.512(2)? Inserting { _id: null, name: 'test' }

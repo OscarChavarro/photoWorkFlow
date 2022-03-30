@@ -72,16 +72,13 @@ Meteor.methods({
             const basePath = path + '/' + sessionLocation.clientTag + '/';
             for ( let i = 0; i < sessionLocation.sessionPaths.length; i++ ) {
                 const sessionPath = basePath + sessionLocation.sessionPaths[i] + '/';
-                console.log(sessionPath);
                 const groups = fs.readdirSync(sessionPath);
                 for ( let j = 0; j < groups.length; j++ ) {
                     const variant = groups[j];
-                    console.log('  - ' + variant);
                     const groupPath = sessionPath + variant;
                     const images = fs.readdirSync(groupPath);
                     for ( let k = 0; k < images.length; k++ ) {
                         const filename = images[k];
-                        console.log('    . ' + filename);
                         if ( !hashMap[filename] ) {
                             hashMap[filename] = new SessionImage(filename);
                         }
@@ -96,7 +93,6 @@ Meteor.methods({
             }
             arr.sort();
             for ( let i = 0; i < arr.length; i++ ) {
-                console.log('Name: ' + arr[i]);
                 if ( arr[i].indexOf('jpg') >= 0 ) {
                     hashMap[arr[i]].variants.sort();
                     index.matrix.push(hashMap[arr[i]]);
