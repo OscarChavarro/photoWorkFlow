@@ -75,6 +75,11 @@ Meteor.methods({
                 const groups = fs.readdirSync(sessionPath);
                 for ( let j = 0; j < groups.length; j++ ) {
                     const variant = groups[j];
+
+                    if ( variant.indexOf('.') >= 0 ) {
+		        continue;
+		    }
+
                     const groupPath = sessionPath + variant;
                     const images = fs.readdirSync(groupPath);
                     for ( let k = 0; k < images.length; k++ ) {
@@ -99,6 +104,7 @@ Meteor.methods({
                 }
             }
         } catch ( e ) {
+	    console.log('error: ', e);
             return null;
         } 
         return index;
