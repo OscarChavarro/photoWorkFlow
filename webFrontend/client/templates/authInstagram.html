@@ -1,0 +1,23 @@
+<!-- 
+Copyright (c) 2022, Oscar Chavarro (jedilink@gmail.com)
+This code is closed source / propertary. Do not redistribute.
+DISPLAIMER: Use AS IS, author is not responsible of any damages
+caused by the misuse of this software.
+-->
+
+<template name="authInstagramTemplate">
+    <h1>Instagram user access</h1>
+    <p>
+        This page gives access to index for an specific authorized Instagram user.
+    </p>
+
+    {{#if instagramUser}}
+        Instagram user ready:
+        <ul>
+            <li>User id: {{instagramUser.user_id}}</li>
+            <li>User auth key: {{instagramUser.access_token}}</li>
+        </ul>
+    {{else}}
+        No instagram user.
+    {{/if}}
+</template>
