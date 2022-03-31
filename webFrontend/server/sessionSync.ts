@@ -11,8 +11,7 @@ import { StorageProvider } from '../lib/entity/StorageProvider';
 import { ServerConfig } from './ServerConfig';
 import { SessionIndex } from '../lib/entity/SessionIndex';
 import { SessionImage } from '/lib/entity/SessionImage';
-
-const fs = require('fs');
+import fs from 'fs';
 
 Meteor.methods({
     getSessionLocationsFromClientTag: function(clientTag: string): SessionLocation {
