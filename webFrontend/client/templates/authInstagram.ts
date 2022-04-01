@@ -35,7 +35,7 @@ Template.authInstagramTemplate.onRendered(function() {
     Meteor.call('instagramCodeToAccessTokenAndUserId', this.data.code, function(e: any, r: any) {
         if (!e && r) {
             const o = JSON.parse(r);
-            if ( o['user_id'] ) {
+            if ( o['username'] ) {
                 Session.set('instagramUser', o);
             } else {
                 console.log('Error on Instagram API call for authorization');
