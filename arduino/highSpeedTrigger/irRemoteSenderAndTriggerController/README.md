@@ -6,6 +6,10 @@ can trigger a camera using infrared or sending a command to a serial port
 that can be read by an external device (i.e. a computer with the Camera's
 API to send an extended command as such a continous burst).
 
+## Electronic layout
+
+<img src="./diagramBreadboard.png">
+
 ## Developers notes
 
 This project has been derived from the IRremote library example on receiving
