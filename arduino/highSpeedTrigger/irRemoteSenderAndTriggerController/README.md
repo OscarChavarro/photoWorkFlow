@@ -1,4 +1,4 @@
-# Triger tool from obstacle detection
+# Trigger tool from obstacle detection
 
 This folder contains a simple arduino tool (currently tested on Arduno UNO)
 that detects a physical obstacle using a photoresistor or a laser sensor and

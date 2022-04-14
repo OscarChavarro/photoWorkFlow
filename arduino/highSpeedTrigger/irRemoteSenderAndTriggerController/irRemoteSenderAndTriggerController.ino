@@ -5,14 +5,22 @@ DISPLAIMER: Use AS IS, author is not responsible of any damages
 caused by the misuse of this software.
 */
 
+//= Manual configuration ===============================================
+
+// true: uses laser detector, false: uses photoresistor
+boolean useLaserModule = true;
+
+#define IR_SEND_PIN 13
+#define PHOTORESISTOR_INPUT_PIN A0
+#define LASER_MODULE_INPUT_PIN 2
+
+//======================================================================
+
 #define DECODE_SONY
 
 #include <IRremote.hpp>
 #include <string.h>
 
-#define IR_SEND_PIN 13
-#define PHOTORESISTOR_INPUT_PIN A0
-#define LASER_MODULE_INPUT_PIN 2
 #define DELAY_MILLISECONDS 10
 
 int sensorValue = 0;
@@ -23,7 +31,6 @@ int deltaValue;
 int tokenCount = 0;
 int currentTime = 0;
 int deltaTimeForDetections = 10000;
-boolean useLaserModule = false;
 
 void
 setup() {
